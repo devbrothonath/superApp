@@ -1,0 +1,39 @@
+
+ 
+
+
+.App {
+    background: url(../../assets/club_img.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* width: 100vw; */
+    background-size: contain;
+}
+
+.img-title {
+    position: absolute;
+    bottom: 80px;
+    color: #fff;
+    left: 40px;
+}
+
+.img-title {
+    color: #FFF;
+    width: 400px;
+font-family: Roboto;
+/* font-size: 55px; */
+font-style: normal;
+font-weight: 900;
+line-height: 141.688%; /* 77.928px */
+letter-spacing: 1.1px;
+}
+
+.background {
+    /* position: absolute; */
+}
+
+.formPage {
+    position: absolute;
+    top:60px;
+    left: 820px;
+}

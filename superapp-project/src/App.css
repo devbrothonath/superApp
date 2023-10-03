@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&family=Single+Day&display=swap');
+
+:root {
+    --ff-roboto: "Roboto", sans-serif;
+    --ff-dm-sans: "DM Sans", sans-serif;
+}
