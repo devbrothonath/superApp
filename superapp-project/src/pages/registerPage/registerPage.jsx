@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import RegisterForm from "../../components/registerForm/registerForm";
-import './registerPage.css'
+import "./registerPage.css";
+import { Link } from "react-router-dom";
 
 const RegisterPage = () => {
+  
   const [values, setValues] = useState({
     name: "",
     userName: "",
@@ -58,15 +60,51 @@ const RegisterPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("runnning")
 
     const data = new FormData(e.target);
     const personData = Object.fromEntries(data.entries());
     console.log(personData);
-    const nameStore = localStorage.setItem("name", personData.name);
-    const userNameStore = localStorage.setItem("userName", personData.userName);
-    const emailStore = localStorage.setItem("email", personData.email);
-    const mobileStore = localStorage.setItem("mobile", personData.mobile);
+
+    
+    // if (!formLocalGet) {
+    //   alert("Fill form");
+    //   return;
+    // }
+
+    const formJSON = JSON.stringify(personData);
+    console.log(formJSON);
+    const formDataLocal = localStorage.setItem("formData", formJSON);
+    const formLocalGet = localStorage.getItem("formData");
+    // const dataArray = JSON.parse(formLocalGet);
+
+
+    // console.log(dataArray.name);
+
+    window.location.href = "/category";
+
+    // const nameStore = localStorage.setItem("name", personData.name);
+    // const userNameStore = localStorage.setItem("userName", personData.userName);
+    // const emailStore = localStorage.setItem("email", personData.email);
+    // const mobileStore = localStorage.setItem("mobile", personData.mobile);
+    
+
+    
   };
+
+  // const namePresent = localStorage.getItem("name")
+  // const userNamePresent = localStorage.getItem("userName")
+  // const emailPresent = localStorage.getItem("email")
+  // const mobilePresent = localStorage.getItem("mobile")
+
+  // const formInfo = [namePresent, userNamePresent, emailPresent, mobilePresent]
+
+  
+  // console.log(formLocalGet);
+
+  // const handleButtonClick = () => {
+    
+  // }
 
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
@@ -88,10 +126,17 @@ const RegisterPage = () => {
                 onChange={onChange}
               />
             ))}
-            <button className="signUp-btn">Sign Up</button>
+              <button type="submit" className="signUp-btn">Sign Up</button>
           </form>
-            <p className="t-c">By clicking on Sign up. you agree to Super app <span className="green-links">Terms and Conditions of Use</span></p>
-            <p className="pri-pol">To learn more about how Super app collects, uses, shares and protects your personal data please head Super app <span className="green-links">Privacy Policy</span></p>
+          <p className="t-c">
+            By clicking on Sign up. you agree to Super app{" "}
+            <span className="green-links">Terms and Conditions of Use</span>
+          </p>
+          <p className="pri-pol">
+            To learn more about how Super app collects, uses, shares and
+            protects your personal data please head Super app{" "}
+            <span className="green-links">Privacy Policy</span>
+          </p>
         </div>
       </div>
     </div>
