@@ -1,0 +1,62 @@
+.categorySide {
+/* text-align: center; */
+}
+
+.categories {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  margin: 20px;
+}
+
+.categories > div {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    outline: 3px solid green;
+    /* margin: -5px; */
+}
+
+.ctgTitle {
+    margin: 10px;
+}
+
+.ctgImg {
+    width: 155px;
+    height: 90px;
+    margin: 20px 13px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px -3px rgba(0,0,0,1);
+}
+
+.action {
+    background: #FF5209;
+}
+.drama {
+    background: #D7A4FF;
+}
+.romance {
+    background: #148A08;
+}
+.thriller {
+    background: #84C2FF;
+}
+.western {
+    background: #902500;
+}
+.horror {
+    background: #7358FF;
+}
+.fantasy {
+    background: #FF4ADE;
+}
+.music {
+    background: #E61E32;
+}
+.fiction {
+    background: #6CD061;
+}

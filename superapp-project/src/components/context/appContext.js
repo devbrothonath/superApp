@@ -15,6 +15,7 @@ export const useAppContext = () => {
 
 const AppContextProvider = ({children}) => {
     const [favorites, setFavorites] = useState([])
+    const [isShown, setIsShown] = useState(false);
 
     const addToFavorites = (movie) => {
         const oldFavorites = [...favorites]
@@ -22,6 +23,14 @@ const AppContextProvider = ({children}) => {
         const newFavorites = oldFavorites.concat(movie);
 
         setFavorites(newFavorites);
+
+        console.log(newFavorites)
+
+        if (newFavorites.length >= 3) {
+            setIsShown(false);
+        } else {
+            setIsShown(true);
+        }
     }
 
     const removeFromFavorites = (id) => {
@@ -30,6 +39,10 @@ const AppContextProvider = ({children}) => {
         const newFavorites = oldFavorites.filter((movie)=>movie.id !== id);
 
         setFavorites(newFavorites);
+
+        console.log(newFavorites)
+
+        setIsShown(newFavorites.length < 3);
     }
 
     return (

@@ -1,0 +1,33 @@
+.categoryPage {
+  display: flex;
+  color: #fff;
+}
+.favSide {
+  flex-direction: column;
+  width: 50%;
+  font-family: var(--ff-roboto);
+  margin-top: 30px;
+  padding: 50px 200px 50px 50px;
+}
+
+.favSide h1 {
+  color: #72db73;
+  font-family: Single Day;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 99.178px */
+}
+
+.favSide p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 139.688%; /* 94.988px */
+}
+
+.catSide {
+  font-family: var(--ff-dm-sans);
+}
