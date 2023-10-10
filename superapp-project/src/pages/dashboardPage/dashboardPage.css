@@ -1,0 +1,15 @@
+.dashboard {
+    display: flex;
+    color: #fff;
+}
+
+.leftSide {
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    /* width: 60vw; */
+}
+
+.rightSide {
+    border: 5px solid green;
+}

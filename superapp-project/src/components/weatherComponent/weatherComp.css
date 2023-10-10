@@ -1,0 +1,76 @@
+.levelIchi {
+  width: 50vw;
+  /* display: flex; */
+  margin-top: 20px;
+  margin-left: 60px;
+  /* padding: 30px 30px 20px 40px; */
+  /* border-radius: 50px; */
+}
+
+.levelNi {
+  display: flex;
+}
+
+.pinkLvl {
+  background: #ff4ade;
+  gap: 80px;
+  padding: 10px 160px;
+}
+
+.blueLvl {
+  background: #101744;
+  justify-content: space-evenly;
+}
+
+.levelSan {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 141.688%; /* 78.013px */
+  letter-spacing: 1.101px;
+}
+
+.levelShi {
+  text-align: center;
+}
+
+.levelShi h3 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 31.432px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 43.907px */
+}
+
+.levelShi h2 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 50.224px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 109.27px */
+}
+
+.levelShi p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16.599px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 34.362px */
+}
+
+.levelShi span {
+    display: block;
+}
+
+.levelShi div {
+    display: flex;
+}
+
+.levelShi img {
+    display: inline;
+}
