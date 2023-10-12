@@ -1,0 +1,29 @@
+.timer-wrap {
+    display: flex;
+    background-color: #1E2343;
+    width: 60vw;
+    margin-left: 20px;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.timer {
+    
+}
+
+.value {
+    display: inline;
+}
+
+.set-timer {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

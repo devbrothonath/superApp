@@ -1,15 +1,19 @@
 .dashboard {
     display: flex;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .leftSide {
-    border: 5px solid red;
-    display: flex;
-    flex-direction: column;
+    /* border: 5px solid red; */
+    /* display: flex; */
+    /* flex-direction: column; */
     /* width: 60vw; */
 }
 
 .rightSide {
-    border: 5px solid green;
+    /* border: 5px solid green; */
+}
+
+.pfl_wtr_nts {
+    display: flex;
 }

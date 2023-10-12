@@ -1,0 +1,30 @@
+.notes {
+    background: #F1C75B;
+    width: 20vw;
+    height: 50vh;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.notes label {
+    display: block;
+    margin-top: px;
+    /* margin-left: 10px; */
+}
+
+.notes textarea {
+    background: rgba(0,0,0,0);
+    border: transparent;
+    background: transparent;
+    margin-top: 10px;
+    width: 100%;
+    resize: none;
+    /* height: 200px; */
+    overflow-y: scroll;
+    font-family: var(--ff-roboto);
+}
+
+.notes textarea:focus {
+    outline: none;
+}

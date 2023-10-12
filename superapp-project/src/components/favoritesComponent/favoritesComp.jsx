@@ -8,11 +8,14 @@ const FavoritesComp = () => {
   const showError = () => {
     if (favorites.length >= 3) {
       setIsShown(false);
-      console.log("go ahead");
+      const favJSON = JSON.stringify(favorites);
+      localStorage.setItem("favoriteGenres", favJSON);
+      // window.location.href = "/";
     } else {
       setIsShown(true);
     }
   };
+  console.log(favorites)
   return (
     <div className="favoritesSide">
       <div>
@@ -26,7 +29,7 @@ const FavoritesComp = () => {
             </div>
           ))}
         </div>
-        {isShown && <span>Select more!</span>}
+        {isShown && <span>Select minimum 3 categories</span>}
       </div>
       <button onClick={showError}>Sign up</button>
     </div>

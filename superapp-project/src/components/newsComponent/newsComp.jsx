@@ -1,10 +1,10 @@
 import React from "react";
 import snow from "../../assets/snow.png";
-import "./newsComp.css"
+import styles from "./newsComp.module.css"
 
 const NewsComp = () => {
   return (
-    <div className="newsComp">
+    <div className={styles.newsComp}>
       <div className="textImg">
         <img src={snow} alt="snow" />
         <div className="bigText">

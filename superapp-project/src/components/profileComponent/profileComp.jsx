@@ -3,6 +3,17 @@ import profilePic from "../../assets/profilePic.png"
 import "./profileComp.css"
 
 const ProfileComp = () => {
+
+    const userData = localStorage.getItem("formData");
+    const parsedUserData = JSON.parse(userData);
+
+    const NameOfUser = parsedUserData.name;
+    const EmailOfUser = parsedUserData.email;
+    const UsernameOfUser = parsedUserData.userName;
+
+    const userGenres = localStorage.getItem("favoriteGenres")
+    const parsedGenres = JSON.parse(userGenres)
+    console.log(parsedGenres);
   return (
     <div className='levelOne'>
         <div className='levelTwo'>
@@ -10,12 +21,17 @@ const ProfileComp = () => {
         </div>
         <div className='levelTwo'>
             <div className='levelThree'>
-                <h2>KK Vinay</h2>
-                <h2>Vinay090@gmail.com</h2>
-                <h1>vinay060</h1>
+                <h2>{NameOfUser}</h2>
+                <h2>{EmailOfUser}</h2>
+                <h1>{UsernameOfUser}</h1>
             </div>
             <div className='levelThree proWid'>
-                <div>
+                {parsedGenres.map((genre) => (
+                    <div key={genre.id}>
+                        <p>{genre.title}</p>
+                    </div>
+                ))}
+                {/* <div>
                     <p>Horror</p>
                 </div>
                 <div>
@@ -38,7 +54,7 @@ const ProfileComp = () => {
                 </div>
                 <div>
                     <p>Fiction</p>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>
