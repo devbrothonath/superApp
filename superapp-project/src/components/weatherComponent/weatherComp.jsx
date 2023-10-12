@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import WeatherJsonData from "../../WeatherJSON";
 import axios from "axios"
-// import weatherIcon from "../../assets/weather/64x64/day/116.png";
 import WeatherIcon from "../../WeatherIcon.js";
 import vector from "../../assets/Vector.svg";
 import vector2 from "../../assets/Vector2.svg";
@@ -19,10 +18,6 @@ const WeatherComp = () => {
   const [humidity, sethumidity] = useState("");
   const url =
   "http://api.weatherapi.com/v1/current.json?key=13efc0a80e7f4832adb85007230710&q=London";
-  
-  // WeatherAPI.map((condition) => {
-  //   console.log(condition);
-  // })
 
   useEffect(() => {
     getWeather();
@@ -63,13 +58,11 @@ const WeatherComp = () => {
   }
   const iconCode = findIconCode(condition);
   console.log("Icon code : ", iconCode)
-  // console.log(WeatherIcon)
 
   return (
     <div className="levelIchi">
       <div className="levelNi pinkLvl">
         <div className="levelSan dateTime">{localtime}</div>
-        {/* <div className="levelSan">{}</div> */}
       </div>
       <div className="levelNi blueLvl">
         <div className="levelShi">
