@@ -31,7 +31,7 @@ const FavoritesComp = () => {
         </div>
         {isShown && <span>Select minimum 3 categories</span>}
       </div>
-      <button onClick={showError}>Sign up</button>
+      <button className="nextPage" onClick={showError}>Next Page</button>
     </div>
   );
 };

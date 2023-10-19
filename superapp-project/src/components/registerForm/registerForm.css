@@ -44,6 +44,7 @@ form {
   border-radius: 2.5px;
 /* border: 1px solid #F00; */
 background: #292929;
+color: #fff;
 }
 
 input[type="checkbox"] {
