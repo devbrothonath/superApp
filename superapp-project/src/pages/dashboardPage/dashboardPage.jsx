@@ -7,6 +7,9 @@ import TimerComp from "../../components/timerComponent/timerComp";
 import "./dashboardPage.css";
 
 const DashboardPage = () => {
+  const moviesSection = () => {
+    window.location.href = "/movies"
+  }
   return (
     <div className="dashboard">
       <div className="leftSide">
@@ -29,6 +32,9 @@ const DashboardPage = () => {
       </div>
       <div className="rightSide">
         <NewsComp />
+      </div>
+      <div>
+        <button onClick={moviesSection}>Browse</button>
       </div>
     </div>
   );

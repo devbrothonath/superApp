@@ -59,7 +59,7 @@ const MoviesArr = [
   },
   {
     id: 9,
-    title: "Fiction",
+    title: "Science Fiction",
     className: "fiction",
     img: fiction,
   },
