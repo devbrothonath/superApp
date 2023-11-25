@@ -33,9 +33,9 @@ const DashboardPage = () => {
       <div className="rightSide">
         <NewsComp />
       </div>
-      <div>
+      {/* <div>
         <button onClick={moviesSection}>Browse</button>
-      </div>
+      </div> */}
     </div>
   );
 };

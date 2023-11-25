@@ -5,6 +5,9 @@
     margin-left: 20px;
     justify-content: space-evenly;
     color: #fff;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-family: roboto;
 }
 
 .timer {

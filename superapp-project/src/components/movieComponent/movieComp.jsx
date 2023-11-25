@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "./movieComp.css"
 // import movieAPI from "../../moviesAPIs";96*
 
 const MovieComp = () => {
@@ -20,7 +21,7 @@ const MovieComp = () => {
       { id: 5, title: "evening" },
       { id: 6, title: "spy" },
     ],
-    Western: [
+    Thriller: [
       { id: 7, title: "Dallas Club" },
       { id: 8, title: "Howdy" },
       { id: 9, title: "Farmhouse" },
@@ -110,7 +111,7 @@ const MovieComp = () => {
   console.log(selectedGenres);
   const filteredGenres = {};
   selectedGenres.forEach((genre) => {
-    filteredGenres[genre] = ApiArray[genre];
+    filteredGenres[genre] = allMovieGenres[genre];
   });
   console.log(filteredGenres);
 
@@ -135,12 +136,12 @@ const MovieComp = () => {
   
 
   return (
-    <div>
+    <div className="movie-container">
       {selectedGenres.map((genre) => (
         <div key={genre}>
           <h2>{genre} Movies</h2>
           <ul>
-            {filteredGenres[genre].slice(0,4).map((movie) => (
+            {filteredGenres[genre].map((movie) => (
               <li key={movie.id}>{movie.title}</li>
             ))}
           </ul>

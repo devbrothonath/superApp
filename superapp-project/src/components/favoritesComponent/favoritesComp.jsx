@@ -10,7 +10,7 @@ const FavoritesComp = () => {
       setIsShown(false);
       const favJSON = JSON.stringify(favorites);
       localStorage.setItem("favoriteGenres", favJSON);
-      window.location.href = "/";
+      window.location.href = "/dashboard";
     } else {
       setIsShown(true);
     }
